@@ -2,7 +2,8 @@ class CheesesController < ApplicationController
 
     def index
     
-    render json: Cheese.all      
+        cheeses = Cheese.all
+        render json: cheeses
     end
 
 end
